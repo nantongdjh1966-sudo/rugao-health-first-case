@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>健康是1｜如皋市实验初中案例宣传海报</title>
+  <style>
+    @page { size: A2 portrait; margin: 0; }
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #173c3a; --red: #b9543f; --paper: #f7f3e8; --paper2: #e8dfcc;
+      --gold: #d7b178; --serif: "Songti SC", "STSong", serif; --sans: "PingFang SC", "Hiragino Sans GB", sans-serif;
+    }
+    html, body { width: 1240px; height: 1754px; margin: 0; overflow: hidden; color: var(--ink); background: var(--paper); font-family: var(--sans); }
+    .page { position: relative; width: 100%; height: 100%; padding: 52px 59px 42px; overflow: hidden; }
+    .page::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        linear-gradient(rgba(23,60,58,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23,60,58,.035) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .top { position: relative; z-index: 2; display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid rgba(23,60,58,.25); font-size: 12px; letter-spacing: .11em; }
+    .top b { font-family: var(--serif); font-size: 18px; }
+    .hero { position: relative; z-index: 2; display: grid; grid-template-columns: 1.34fr .66fr; gap: 34px; margin-top: 37px; }
+    .kicker { margin: 0 0 17px; color: var(--red); font-size: 10px; font-weight: 700; letter-spacing: .2em; }
+    h1 { margin: 0; font-family: var(--serif); font-size: 104px; line-height: 1; letter-spacing: -.06em; }
+    h1 span { display: block; }
+    h1 .large { color: var(--ink); font-size: .66em; margin-top: 12px; }
+    .lead { max-width: 730px; margin: 26px 0 0; font-family: var(--serif); font-size: 22px; line-height: 1.75; color: #475c54; }
+    .project-card { align-self: end; padding: 26px; color: #fff; background: var(--ink); }
+    .project-card p { margin: 0 0 18px; color: rgba(255,255,255,.54); font-size: 9px; letter-spacing: .14em; }
+    .project-card h2 { margin: 0 0 14px; font-family: var(--serif); font-size: 30px; line-height: 1.3; }
+    .project-card dl { margin: 0; }
+    .project-card dl div { padding: 9px 0; border-top: 1px solid rgba(255,255,255,.14); }
+    .project-card dt { color: rgba(255,255,255,.48); font-size: 9px; }
+    .project-card dd { margin: 2px 0 0; font-size: 13px; }
+    .metrics { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(4,1fr); margin-top: 28px; border-top: 1px solid rgba(23,60,58,.25); border-bottom: 1px solid rgba(23,60,58,.25); }
+    .metric { padding: 17px 16px; border-right: 1px solid rgba(23,60,58,.2); }
+    .metric:last-child { border-right: 0; }
+    .metric b { display: block; font-family: var(--serif); font-size: 37px; line-height: 1.1; }
+    .metric span { display: block; margin-top: 5px; color: #5f7168; font-size: 10px; line-height: 1.5; }
+    .model { position: relative; z-index: 2; margin-top: 27px; }
+    .model-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
+    .model-head h2 { margin: 0; font-family: var(--serif); font-size: 35px; }
+    .model-head p { margin: 0; color: #697c73; font-size: 9px; }
+    .model img { width: 100%; border: 1px solid rgba(23,60,58,.22); }
+    .columns { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3,1fr); gap: 11px; margin-top: 20px; }
+    .col { padding: 19px 19px 17px; border: 1px solid rgba(23,60,58,.2); background: rgba(255,253,247,.65); }
+    .col span { color: var(--red); font-size: 9px; letter-spacing: .12em; }
+    .col h3 { margin: 20px 0 8px; font-family: var(--serif); font-size: 24px; }
+    .col p { margin: 0; color: #586a61; font-size: 10px; line-height: 1.7; }
+    .evidence { position: relative; z-index: 2; display: grid; grid-template-columns: 1.3fr .7fr; gap: 16px; margin-top: 22px; }
+    .note-box { padding: 20px 23px; background: var(--paper2); }
+    .note-box h3 { margin: 0 0 9px; font-family: var(--serif); font-size: 23px; }
+    .note-box p { margin: 0; color: #5e6e65; font-size: 10px; line-height: 1.75; }
+    .qr-box { display: grid; grid-template-columns: 102px 1fr; gap: 12px; align-items: center; padding: 13px; color: white; background: var(--ink); }
+    .qr-box img { width: 102px; height: 102px; background: white; }
+    .qr-box b { font-family: var(--serif); font-size: 17px; }
+    .qr-box small { display: block; margin-top: 7px; color: rgba(255,255,255,.62); font-size: 7px; line-height: 1.55; word-break: break-all; }
+    .transfer { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 18px; }
+    .transfer div { padding: 10px 13px; border: 1px solid rgba(23,60,58,.18); background: rgba(255,253,247,.55); }
+    .transfer b { display: block; font-family: var(--serif); font-size: 14px; }
+    .transfer span { display: block; margin-top: 3px; color: #65776d; font-size: 8px; }
+    .bottom { position: absolute; left: 59px; right: 59px; bottom: 44px; z-index: 2; display: flex; justify-content: space-between; align-items: flex-end; padding-top: 16px; border-top: 1px solid rgba(23,60,58,.22); }
+    .bottom h3 { margin: 0 0 4px; font-family: var(--serif); font-size: 20px; }
+    .bottom p { margin: 0; color: #6b7a70; font-size: 8px; }
+    .bottom .mark { color: var(--red); font-family: var(--serif); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top"><b>如皋市实验初中</b><span>全国教育科学规划项目 · 基础教育改革创新实践案例</span><span>2026 / 南通</span></div>
+    <section class="hero">
+      <div>
+        <p class="kicker">HEALTH FIRST · ONE SCHOOL’S REDESIGN</p>
+        <h1><span>健康是1</span><span class="large">每个学生都有自己的改进路径</span></h1>
+        <p class="lead">把“健康第一”从专项活动重构为课程、治理与评价相互支撑的学校实践：看见每个学生的真实处境，再让每天的课程做出回应。</p>
+      </div>
+      <aside class="project-card">
+        <p>PROJECT IDENTITY</p>
+        <h2>青少年情感教育的内涵、体系和范式研究</h2>
+        <dl>
+          <div><dt>项目负责人</dt><dd>丁锦宏</dd></div>
+          <div><dt>项目批准号</dt><dd>BEA230076</dd></div>
+          <div><dt>实践单位</dt><dd>如皋市实验初中</dd></div>
+          <div><dt>案例方向</dt><dd>坚持健康第一</dd></div>
+        </dl>
+      </aside>
+    </section>
+    <section class="metrics">
+      <div class="metric"><b>273人</b><span>超重肥胖学生纳入管理<br>2023年体质测试识别</span></div>
+      <div class="metric"><b>12.8斤</b><span>上述学生一学期<br>平均减重</span></div>
+      <div class="metric"><b>+1.8个</b><span>男生引体向上<br>一年平均增量</span></div>
+      <div class="metric"><b>+40分钟</b><span>每日校内有效运动<br>制度性增加</span></div>
+    </section>
+    <section class="model">
+      <div class="model-head"><h2>一体三维四环：健康学校课程育人模式</h2><p>健康是“1”，其他是后面的“0”</p></div>
+      <img src="assets/images/一体三维四环模式图.png" alt="一体三维四环模式图">
+    </section>
+    <section class="columns">
+      <article class="col"><span>01 / BODY</span><h3>健康身体</h3><p>每天一节体育课、月月有比赛、视力与脊柱档案、减脂餐与营养点餐，把体能、视力、体态纳入日常。</p></article>
+      <article class="col"><span>02 / MIND</span><h3>健康心理</h3><p>心理晴雨表、全员导师、润心广播、ABC分级关爱和“未来可期”课程，让求助与陪伴成为学校日常。</p></article>
+      <article class="col"><span>03 / SOCIETY</span><h3>健康社会适应</h3><p>师友共同体、班级共建和志愿服务，让学生从会相处、能融入走向愿担当。</p></article>
+    </section>
+    <section class="evidence">
+      <div class="note-box"><h3>证据怎么读</h3><p>12.8斤只对应273名纳入管理的学生；+1.8个只对应男生引体向上；90%转化率来自学校现有材料，仍须补齐样本、分子分母和随访时点。专业发表、媒体传播不替代学生健康结果。</p></div>
+      <div class="qr-box"><img src="assets/images/qr-site.png" alt="案例证据网站二维码"><div><b>扫码阅卷</b><small>nantongdjh1966-sudo.github.io/<br>rugao-health-first-case/</small></div></div>
+    </section>
+    <section class="transfer">
+      <div><b>课程进表</b><span>健康第一进入学校章程、年度计划和课表</span></div>
+      <div><b>责任共通</b><span>体育、心理、德育、总务、医务共同履职</span></div>
+      <div><b>数据有界</b><span>看趋势、给支持，不公开学生健康排名</span></div>
+      <div><b>评价闭环</b><span>学生、教师、学校三层评价共同改进</span></div>
+      <div><b>协同支持</b><span>家庭、社区、医院和相关部门稳定参与</span></div>
+      <div><b>结果审慎</b><span>不以短期减重或分数波动替代健康判断</span></div>
+    </section>
+    <div class="bottom">
+      <div><h3>从“纠正少数问题”到“支持每一个学生”</h3><p>申报表 · 实践总结 · 证据摘编 · 材料索引｜完整原件经百度网盘定向共享</p></div>
+      <div class="mark">BEA230076</div>
+    </div>
+  </main>
+</body>
+</html>
